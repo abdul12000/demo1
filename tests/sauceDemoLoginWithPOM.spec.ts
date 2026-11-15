@@ -17,5 +17,8 @@ test.describe('Sauce Demo login Tests with Hooks', () => {
         await loginPage.loginAsStandardUser(loginData.validUser.username, loginData.validUser.password);
         await productsPage.verifyLoginSuccess();
 
+        await productsPage.verifybackpackIsDisplayed();
+        await productsPage.addBackpackToBassket();
+
     })
 })

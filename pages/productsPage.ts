@@ -25,4 +25,7 @@ export class ProductsPage {
     async verifyLoginSuccess() {
         await expect(this.page).toHaveURL(/inventory.html/);
     }
+    async verifybackpackIsDisplayed(){
+        await expect(this.backpack).toHaveText('Sauce Labs Backpack') 
+    }
 }

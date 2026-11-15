@@ -26,6 +26,6 @@ export class ProductsPage {
         await expect(this.page).toHaveURL(/inventory.html/);
     }
     async verifybackpackIsDisplayed(){
-        await expect(this.addToCartBackpack).toHaveText('Sauce Labs Backpack') 
+        await expect(this.backpack).toHaveText('Sauce Labs Backpack') 
     }
 }
